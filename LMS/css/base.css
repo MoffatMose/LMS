@@ -1,0 +1,187 @@
+/* base.css */
+
+:root {
+    --color-lime: #D4FF6B;
+    --color-orange: #FFA63B;
+    --color-purple: #9C27B0;
+    --color-pinkred: #FF5370;
+    --color-darkbrown: #4E342E;
+    --color-gold: #FFD600;
+    --color-brightgreen: #A4FF47;
+}
+
+
+/* Base Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--color-darkbrown);
+    background: linear-gradient(to bottom right, rgba(212, 255, 107, 0.1), rgba(255, 214, 0, 0.05));
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    background: var(--color-darkbrown);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand a {
+    color: var(--color-lime);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--color-brightgreen);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-orange);
+}
+
+.cta-nav {
+    background: var(--color-pinkred);
+    color: white !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.cta-nav:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: var(--color-darkbrown);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: var(--color-lime);
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+
+/* Footer Styling */
+
+.site-footer {
+    background: var(--color-purple);
+    color: white;
+    padding: 3rem 5% 1rem;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column h3 {
+    color: var(--color-gold);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-brightgreen);
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: var(--color-lime);
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 2px solid var(--color-gold);
+    border-radius: 4px;
+}
+
+.newsletter button {
+    background: var(--color-pinkred);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 2rem 0 0;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    .nav-links {
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
