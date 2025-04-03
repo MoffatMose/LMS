@@ -1,0 +1,186 @@
+/* main.css */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, rgba(80, 40, 87, 0.8), rgba(185, 106, 119, 0.8)), url('/LMS/assets/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+   
+}
+
+.hero-content h1 {
+    font-size: 56pt;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+    color: var(--color-gold);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: var(--color-orange);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background: var(--color-pinkred);
+}
+
+/* Why Choose Section */
+.why-choose {
+    padding: 4rem 2rem;
+    background: var(--color-lime);
+    color: var(--color-darkbrown);
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: var(--color-darkbrown);
+}
+
+/* Course Section */
+.course.section {
+    padding: 4rem 2rem;
+    background: var(--color-brightgreen);
+    color: var(--color-darkbrown);
+    text-align: center;
+}
+
+.course h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.course-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: var(--color-darkbrown);
+}
+
+.course-card a {
+    text-decoration: none;
+    color: var(--color-orange);
+    font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 2rem;
+    background: var(--color-purple);
+    color: white;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.testimony img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--color-gold);
+}
+
+.testimony p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.testimony h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features,
+    .course-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature,
+    .course-card {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}

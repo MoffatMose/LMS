@@ -5,38 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - LMS</title>
-    <link rel="stylesheet" href="\LMS\css\main.css">
+    <link rel="stylesheet" href="/LMS/css/main.css">
+    <link rel="stylesheet" href="/LMS/css/base.css">
+    <link rel="stylesheet" href="/LMS/css/forms.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">LMS</div>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-brand">
+            <a href="index.html" aria-current="page">AlgoNexum</a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
     </nav>
+    
+    <div class="vh-100">
+        <div class="login-container">
+            <div class="card">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form class="login-form">
+                        <label for="email">Email/Username:</label>
+                        <input type="email" id="email" name="email" required placeholder="Email or Username">
+                        
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        
+                        <button type="submit" class="btn-dark">Login</button>
 
-    <div class="login-container">
-        <form class="login-form">
-            <h2>Login</h2>
-            <label for="email">Email/Username:</label>
-            <input type="email" id="email" name="email" required placeholder='email or username'>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Login</button>
-            <p>Don't have an account? <a href="register.html">Register here</a></p>
-        </form>
+                        <p>Don't have an account? <a href="register.html">Join Us Now</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 AlgoNexum. All rights reserved.</p>
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About AlgoNexum</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">Our Mission</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="testimonials.html">Success Stories</a></li>
+                    <li><a href="partners.html">Partnerships</a></li>
+                    <li><a href="press.html">Press Kit</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Popular Courses</h3>
+                <ul class="footer-links">
+                    <li><a href="fullstack.html">Full Stack Development</a></li>
+                    <li><a href="python-ds.html">Python Data Science</a></li>
+                    <li><a href="ai-ml.html">AI & Machine Learning</a></li>
+                    <li><a href="cyber-security.html">Cybersecurity Fundamentals</a></li>
+                    <li><a href="digital-marketing.html">Digital Marketing Pro</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="mailto:contact@algonexum.com">📧 contact@algonexum.com</a>
+                    <a href="tel:+18001234567">📞 +1 (800) 123-4567</a>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/company/algonexum">LinkedIn</a>
+                        <a href="https://twitter.com/algonexum">Twitter</a>
+                        <a href="https://facebook.com/algonexum">Facebook</a>
+                        <a href="https://youtube.com/algonexum">YouTube</a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h4>Get Learning Insights</h4>
+                    <form action="/newsletter" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AlgoNexum. All rights reserved. |
+                <a href="sitemap.html">Site Map</a> |
+                <a href="code-conduct.html">Code of Conduct</a>
+            </p>
+            <p>Registered with <b> Government of Kenya </b> | Accredited Online Learning Provider</p>
+        </div>
     </footer>
 </body>
-
 </html>
-</body>
 
-</html>

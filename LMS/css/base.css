@@ -8,6 +8,7 @@
     --color-darkbrown: #4E342E;
     --color-gold: #FFD600;
     --color-brightgreen: #A4FF47;
+    --color-bg-gradient: linear-gradient(to bottom right, #63443e, #9aa57d, #445a07);
 }
 
 
@@ -23,14 +24,14 @@ body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     line-height: 1.6;
     color: var(--color-darkbrown);
-    background: linear-gradient(to bottom right, rgba(212, 255, 107, 0.1), rgba(255, 214, 0, 0.05));
+    background: linear-gradient(to bottom right, rgba(179, 163, 22, 0.671), rgba(197, 169, 29, 0.05)
 }
 
 
 /* Navigation Bar */
 
 .navbar {
-    background: var(--color-darkbrown);
+    background : var(--color-darkbrown);
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
