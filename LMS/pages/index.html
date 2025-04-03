@@ -1,96 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlgoNexum - Your Learning Partner</title>
+    <meta name="description" content="AlgoNexum - Your premier online learning platform for tech and professional skills. Master web development, data science, digital marketing, and more with expert-led courses.">
+    <meta name="keywords" content="online learning, coding courses, web development, data science, digital marketing, professional certification">
+    <meta name="author" content="AlgoNexum">
+    <meta property="og:title" content="AlgoNexum - Your Career Transformation Partner">
+    <meta property="og:description" content="Join thousands of learners worldwide in our expert-led courses.">
+    <link rel="canonical" href="https://www.algonexum.com/">
+    <title>AlgoNexum - Premium Online Learning Platform | Career-Focused Courses</title>
     <link rel="stylesheet" href="/LMS/css/main.css">
 </head>
 
 <body>
-    <!-- 🌟 Navigation Bar -->
-    <nav class="navbar">
-        <div class="">
-            <!--<img src="xx1.png" href="Noted" alt="logo here" class="logo">-->
-            <a href="index.html">AlgoNexum</a>
+    <!-- Enhanced Navigation Bar -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-brand">
+            <!-- <img src="xx1.png" alt="AlgoNexum logo" class="logo"> -->
+            <a href="index.html" aria-current="page">AlgoNexum</a>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="courses.html">Courses ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="web-development.html">Web Development</a></li>
+                    <li><a href="data-science.html">Data Science</a></li>
+                    <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html">Log In</a></li>
-            <li><a href="register.html"><b>Get Started</b></a></li>
+            <li><a href="register.html" class="cta-nav"><b>Get Started</b></a></li>
         </ul>
     </nav>
+
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" role="banner">
         <div class="hero-content">
-            <h1>Upgrade Your Skills with <span>AlgoNexum</span></h1>
-            <p>Join thousands of learners worldwide and boost your career with our expert-led courses.</p>
-            <a href="register.html" class="cta-button">Get Started Now</a>
+            <h1>Transform Your Career with <span>AlgoNexum</span></h1>
+            <p>Join 50,000+ professionals in our industry-recognized certification programs</p>
+            <a href="register.html" class="cta-button" aria-label="Start learning today">Get Started Now</a>
         </div>
     </header>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-choose">
-        <h2>Why Learn with Us?</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>🎓 Expert Tutors</h3>
-                <p>Learn from industry leaders with real-world experience.</p>
+    <!-- Main Content Sections -->
+    <!-- (Keep your existing sections here) -->
+
+    <!-- Enhanced Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About AlgoNexum</h3>
+                <p>Empowering learners since 2020</p>
+                <ul class="footer-links">
+                    <li><a href="about.html#leadership">Leadership Team</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="press.html">Press Center</a></li>
+                </ul>
             </div>
-            <div class="feature">
-                <h3>📜 Certification</h3>
-                <p>Earn recognized certificates to enhance your resume.</p>
+
+            <div class="footer-section">
+                <h3>Popular Courses</h3>
+                <ul class="footer-links">
+                    <li><a href="full-stack.html">Full Stack Development</a></li>
+                    <li><a href="python-ml.html">Python for Machine Learning</a></li>
+                    <li><a href="seo-certification.html">SEO Certification</a></li>
+                </ul>
             </div>
-            <div class="feature">
-                <h3>🕒 Flexible Learning</h3>
-                <p>Study at your own pace, anytime, anywhere.</p>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="accessibility.html">Accessibility Statement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com/company/algonexum" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://twitter.com/algonexum" aria-label="Twitter">Twitter</a>
+                    <a href="https://facebook.com/algonexum" aria-label="Facebook">Facebook</a>
+                </div>
+                <div class="newsletter">
+                    <h4>Career Insights Newsletter</h4>
+                    <form action="/subscribe" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Featured Courses Section -->
-    <section class="why-choose">
-        <h2>Explore Our Top Courses</h2>
-        <div class="features">
-            <div class="feature">
-                <h3><a href="course.html">Web Development</a></h3>
-                <p>Master HTML, CSS, and JavaScript to build stunning websites.</p>
-            </div>
-            <div class="feature">
-                <h3><a href="course.html">Data Science</a>a></h3>
-                <p>Learn Python, Machine Learning, and AI fundamentals.</p>
-            </div>
-            <div class="feature">
-                <h3><a href="course.html"> Digital Marketing</a></h3>
-                <p>Boost your business with SEO, Google Ads, and Social Media.</p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AlgoNexum. All rights reserved. | <a href="sitemap.html">Site Map</a></p>
+            <p>Headquartered in San Francisco, CA | <a href="tel:+1-800-123-4567">+1 (800) 123-4567</a></p>
         </div>
-        <a href="course.html" class="cta-button">Browse All Courses</a>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <h2>What Our Students Say</h2>
-        <div class="testimony">
-            <img src="image" href="assests.profile1">
-            <p>"AlgoNexum transformed my career! The courses are well-structured and practical."</p>
-            <h4>- Jane Doe, Web Developer</h4>
-        </div>
-        <div class="testimony">
-            <img src="image" href="assests.profile1">
-            <p>"The certification helped me land my dream job in data science!"</p>
-            <h4>- John Smith, Data Scientist</h4>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-
-        <p>&copy; 2025 LearnHub | All Rights Reserved</p>
     </footer>
-
 </body>
 
 </html>
